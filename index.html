@@ -7,29 +7,38 @@
 	<title>Minha Primeira Página</title>  <!-- Vai na Aba do navegador, nome da Página -->
 	<!-- Link de referência para as personalizações que estarão em "style.css"-->
 	<link href="style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
+		<p>Links úteis: <a href="#WLI">"What is Lorem Ipsum?"</a>
+						<a href="#SG">"Sorvete Gourmet"</a>
+						<a href="#LC">"Lista de Compras"</a>
+						<a href="#RMV"> "Ranking dos Melhores Vendedores"</a></p>
 		<!-- "h1:h6" - Títulos
 			 "id" - Identificação do item para receber personalização CSS.-->
 		<h1 id="titulo">Título 1 - Título Principal</h1>
 		<h2>Título 2 - Sub-título</h2>
 		       <!--Até o h6-->
 
-		<h2>What is Lorem Ipsum?</h2>
+		<h2 id="WLI">What is Lorem Ipsum?</h2>
 
 		<!-- Parágrafo --> <!-- style inline - mudar o estilo do texto diretamente na linha do código.-->
-		<p style="color: red;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<p id="p1" style="color: red;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 		<p id="p2">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 		<!-- Tags -->
-		<p>Esse é um <strong>teste em negrito.</strong></p>
+			<!-- class - transforma tudo que for selecionado em uma classe que irá receber a personalizanção no CSS.-->
+		<p class="testeclass">Esse é um <strong>teste em negrito.</strong></p>
 		<p>Esse é um <em>texto em itálico.</em></p>
 		<p>Esse é um <mark>texto com marcação.</mark></p>
-		<p>Esse é um <small>texto em small.</small></p>
+		<p class="testeclass">Esse é um <small>texto em small.</small></p>
 		<p>Esse é um <del>texto que foi removido.</del></p>
 		<p>Esse é um <ins>texto que foi inserido.</ins></p>
-		<p>Esse é um <sub>texto subscript.</sub></p>
+		<p class="testeclass">Esse é um <sub>texto subscript.</sub></p>
 		<p>Esse é um <sup>texto em superscript</sup>.</p>
+		<p id="p3">Também é possível formatar um texto através do CSS, como este sublinhado aqui.</p>
 
 		<!-- Tag "a" para criar link, utilizando "href" (hyper reference) com o link em aspas. -->
 		<a href="sobre.html">Sobre Programador BR</a>
@@ -41,22 +50,23 @@
 
 		<br><br>
 
-		<a href="https://www.alphagel.com.br/blog/o-que-e-sorvete-de-massa/">
-			<img src="image/sorvetegourmet.jpg" alt="Sorvete gourmet" height="300">
+		<a href="https://www.alphagel.com.br/blog/o-que-e-sorvete-de-massa/" target="_blank">
+			<img id="SG" src="image/sorvetegourmet.jpg" alt="Sorvete gourmet" height="300">
 		</a>
 
 		<!-- Listas 
-			     "ul" - Unordered List
-				 "ol" - Ordered List
-				 "li" - List Item -->
-		<h2>Lista de Compras</h2>
-		<ul>
+			    "ul" - Unordered List
+				"ol" - Ordered List
+				"li" - List Item
+				"div" - agrupameto de conteúdos para receberem alguma personalização juntos. -->
+		<div id="compras"><h2 id="LC">Lista de Compras</h2>
+		<ul><strong>
 			<li>Arroz</li>
-			<li>Feijão</li>
+			<li>Feijão</bold></li>
 			<li>Refrigerante</li>
-		</ul>
+		</strong></ul></div>
 
-		<h2>Ranking dos melhores vendedores</h2>
+		<h2 id="RMV">Ranking dos Melhores Vendedores</h2>
 		<ol>
 			<li>Marcela</li>
 			<li>João</li>
@@ -84,9 +94,70 @@
 				<td>8888888</td>
 				<td>joana@programadorbr.com</td>
 			</tr>
-
 		</table>
 
+		<div id="cm"></div>
+		<div id="mm"></div>
+		<div id="in"></div>
+		<div id="px"></div>
+		<div id="pt"></div>
+		<div id="pc"></div>
+
+		<br><br><br<br>
+
+		Texto no Body
+
+		<div class="container">Texto no container
+			<div class="inside">Texto no inside</div>
+		</div>
+		<br><br><br<br>
+
+		<div id="base"></div>
+
+		<div id="container2">
+			<div id="conteudo">Texto qualquer</div>
+		</div>
+		<br><br><br>
+
+		<div class="borda">Conteúdo</div>
+
+		<div class="quadrado borda"></div>
+		<br><br><br>
+
+		<div class="square">Texto</div>
+		<br><br><br>
+
+		<p id="p4">Meu Parágrafo</p>
+		<br><br><br>
+		
+		<p class="NLI">A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações para testar e ajustar aspectos visuais antes de utilizar conteúdo real.</p>
+		<br>
+		<p class="LLI">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in pretium justo, et consectetur diam. Quisque commodo nisl in imperdiet facilisis. Vestibulum in enim bibendum, congue dolor eget, laoreet nulla. Pellentesque in luctus justo. Mauris consectetur elit bibendum, consectetur diam vitae, feugiat purus. Aliquam eu faucibus dui. Praesent a nibh iaculis, tincidunt lectus at, vestibulum dui. Morbi dignissim enim hendrerit orci dictum faucibus. Aliquam erat volutpat. Fusce purus est, rhoncus egestas metus mattis, pellentesque aliquam ipsum.</p>
+		<br>
+		<p class="LCS">Praesent ut accumsan elit. Sed dapibus mi et bibendum tincidunt. Fusce rhoncus purus lacus, non ultricies turpis pellentesque nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lacus nulla. Fusce ullamcorper mattis metus eu vestibulum. Etiam aliquam laoreet enim, tempus dignissim velit finibus nec. Ut consectetur at erat eget finibus. Sed at metus vitae turpis cursus ullamcorper. Cras rhoncus lorem vel diam pretium, non ultrices velit facilisis. Maecenas tempus dui vel ipsum hendrerit, vitae lobortis dui aliquet. Nunc hendrerit non nisi id tempus.</p>
+		<br><br><br>
+
+		<a class="link" href="#">Home</a>
+		<br><br><br>
+
+		<div>Lista Sem Ordem
+			<ul class="unl"><strong>
+				<li class="eli">Item 1</li>
+				<li class="eli">Item 2</bold></li>
+				<li class="eli">Item 3</li>
+			</ul></div>
+	
+			
+			<div>Lista Ordenada
+			<ol class="orl">
+				<li class="eli">Item 1</li>
+				<li class="eli">Item 2</li>
+				<li class="eli">Item 3</li>
+			</ol></div>
+	
+	
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
