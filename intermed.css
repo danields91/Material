@@ -53,3 +53,92 @@
     bottom: 0px;        
 }
 .green-square{background-color: green;}
+
+.pc1{float: left;} /* Deixa o obejto flutuando ao lado do conteúdo do parágrafo. */
+.pc2{float: right;}
+.tq{font-size: 1.2rem;
+    clear: right;} /* Anula o efeito de float da imagem próxima ao parágrafo. A imagem não ficará ao lado do texto. */
+.left{border: 2px solid greenyellow;}
+
+.card{
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 200px;
+    border: 2px solid royalblue;
+    text-align: center;
+}
+.c1{
+
+    line-height: 200px;}
+.c2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card2{
+    clear: left;
+    float: left;
+    border: 2px solid royalblue;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.br{clear: left;}
+
+.header{
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    background-color: gray;
+}
+
+.header2{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+    background-color: #5C57A4;
+    padding: 15px;
+    font-size: 18px;
+}
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li{
+    display: inline-block;
+    color: white;
+    margin-right: 15px;
+}
+
+.logo{
+    float: left;
+    color: white;
+}
+@media screen and (max-width: 400px) {
+
+    .header2{
+        background-color: grey;
+    }
+    .logo{
+        float: none;
+        text-align: center;
+    }
+    .menu{
+        margin-top: 20px;
+        float: none;
+        text-align: center;
+
+    }
+    li{
+        float: none;
+        background-color: red;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+}
